@@ -3,9 +3,9 @@ import Navbar from '../components/Navbar';
 import '../styles/shop.css';
 
 // Import images
-import rekindleImage from '../assets/rekindle.png';
-import rekindle2Image from '../assets/rekindle2.png';
-import rekindle3Image from '../assets/rekindle3.png';
+import rekindleImage from '../assets/orangeBlueTopView.png';
+import rekindle2Image from '../assets/coasterTopView.png';
+import rekindle3Image from '../assets/orangeDrink.png';
 
 const Shop = () => {
   return (
@@ -14,28 +14,25 @@ const Shop = () => {
       
       {/* Hero Section */}
       <section className="hero-section">
-        <div className="hero-container">
-          <div className="hero-content">
-            <h1 className="hero-title">
-              <span className="invest">invest in something</span>
-              <br />
+        <div className="bg-top"></div>
+        <div className="bg-bottom"></div>
+        <div className="hero-wrapper">
+          <img 
+            src={rekindleImage} 
+            alt="Cocktails and circular theme" 
+            className="hero-image"
+          />
+          <div className="hero-text">
+            <h2>
+              <span className="invest">invest in something</span><br />
+            </h2>
+            <h1>
               <span className="circular">circular</span>
             </h1>
           </div>
-          <div className="hero-images">
-            <img 
-              src={rekindleImage} 
-              alt="Blue cocktail with lime garnish on cork coaster" 
-              className="cocktail-image cocktail-blue"
-            />
-            <img 
-              src={rekindle3Image} 
-              alt="Orange cocktail with orange garnish on cork coaster" 
-              className="cocktail-image cocktail-orange"
-            />
-          </div>
         </div>
       </section>
+
 
       {/* Content Section */}
       <section className="content-section">

@@ -6,73 +6,78 @@
 
 /* Hero Section */
 .hero-section {
-  background: linear-gradient(135deg, #f8f6f0 0%, #ede7d9 100%);
+  flex-direction: column;
+  display: flex;
   padding: 4rem 2rem;
   position: relative;
   overflow: hidden;
+  height: 400px;
+  
 }
 
-.hero-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
-  align-items: center;
-}
-
-.hero-content {
+.hero-wrapper {
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.hero-title {
-  font-size: 3.5rem;
-  font-weight: 400;
-  color: #333;
-  line-height: 1.2;
-  margin-bottom: 1rem;
-}
-
-.hero-title .invest {
-  font-style: italic;
-  color: #666;
-}
-
-.hero-title .circular {
-  font-weight: 700;
-  color: #8B4513;
-}
-
-.hero-images {
-  display: flex;
+  width:75%;
+  height:auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  position: relative;
+  z-index: 10;
 }
 
-.cocktail-image {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
-}
-
-.cocktail-image:hover {
-  transform: scale(1.05);
-}
-
-.cocktail-blue {
-  z-index: 2;
-}
-
-.cocktail-orange {
-  margin-top: 2rem;
+.bg-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #f6eddf; /* beige */
   z-index: 1;
+}
+
+/* bottom half */
+.bg-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: white;
+  z-index: 1;
+}
+
+.hero-image {
+  width: 450px;
+  height: auto;
+  object-fit: contain;
+}
+
+.hero-text h1 {
+  font-size: 5rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.hero-text h2 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.invest {
+  color: #555;
+  font-style: italic;
+}
+
+.circular {
+  color: #823200;
+  font-weight: 700;
 }
 
 /* Content Section */
@@ -120,7 +125,6 @@
 /* Product Showcase Section */
 .product-showcase {
   padding: 4rem 2rem;
-  background: linear-gradient(135deg, #f8f6f0 0%, #ede7d9 100%);
 }
 
 .showcase-container {
@@ -128,8 +132,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 4rem;
+  justify-content: space-evenly;
 }
 
 .product-frame {
@@ -137,11 +140,15 @@
   border: 3px solid #8B4513;
   border-radius: 24px;
   padding: 3rem;
+  width: 260px; 
+  height: 260px;
+  padding: 2rem;  
   display: flex;
   align-items: center;
   justify-content: center;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
 .product-frame:hover {
@@ -149,8 +156,8 @@
 }
 
 .coaster-image {
-  width: 200px;
-  height: 200px;
+  width: 700px;
+  height: 700px;
   border-radius: 50%;
   object-fit: cover;
 }
