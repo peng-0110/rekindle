@@ -1,11 +1,18 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import Footer from "../components/Footer";
 import '../styles/shop.css';
 
 // Import images
 import rekindleImage from '../assets/orangeBlueTopView.png';
 import rekindle2Image from '../assets/coasterTopView.png';
 import rekindle3Image from '../assets/orangeDrink.png';
+import coasterStackImage from '../assets/coasterStack.png';
+import twoDrinkImage from '../assets/twoDrink.png';
+import cawpLogo from '../assets/CAWP.jpg';
+import chopvalueLogo from '../assets/chopAlue.jpeg';
+import ubcBookStore from "../assets/ubcBookStore.jpeg"
+
 
 const Shop = () => {
   return (
@@ -73,6 +80,91 @@ const Shop = () => {
           </div>
         </div>
       </section>
+
+      {/* Our Coasters Are Section */}
+      <section className="coasters-features">
+        <div className="coasters-container">
+          <h2 className="coasters-title">our coasters are</h2>
+          <div className="features-grid">
+            <div className="feature-block">
+              <div className="feature-icon"></div>
+              <h3 className="feature-title">Functionality</h3>
+              <p className="feature-description">Durable and water-resistant</p>
+            </div>
+            <div className="feature-block">
+              <div className="feature-icon"></div>
+              <h3 className="feature-title">Eco-Conscious</h3>
+              <p className="feature-description">Traceable and compostable</p>
+            </div>
+            <div className="feature-block">
+              <div className="feature-icon"></div>
+              <h3 className="feature-title">Youth-Powered</h3>
+              <p className="feature-description">Developed by students</p>
+            </div>
+            <div className="feature-block">
+              <div className="feature-icon"></div>
+              <h3 className="feature-title">Scalable & Accessible</h3>
+              <p className="feature-description"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Functional and Storytelling Section */}
+      <section className="functional-storytelling">
+        <div className="functional-container">
+          <h2 className="functional-title">functional and storytelling</h2>
+          <div className="functional-content">
+            <div className="coaster-stack-wrapper">
+              <img 
+                src={coasterStackImage} 
+                alt="Stack of cork coasters" 
+                className="coaster-stack-image"
+              />
+            </div>
+            <div className="cocktails-wrapper">
+              <img 
+                src={twoDrinkImage} 
+                alt="Two cocktails on coasters" 
+                className="cocktails-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Our Partnerships Section */}
+      <section className="partnerships">
+        <div className="partnerships-container">
+          <h2 className="partnerships-title">our partnerships</h2>
+          <div className="partners-logos">
+            <div className="partner-logo">
+              <img 
+                src={cawpLogo} 
+                alt="CAWP Logo" 
+                className="partner-image"
+              />
+            </div>
+            <div className="partner-logo">
+              <img 
+                src={chopvalueLogo} 
+                alt="CHOPVALUE Logo" 
+                className="partner-image"
+              />
+            </div>
+            <div className="partner-logo">
+              <img 
+                  src={ubcBookStore} 
+                  alt="CHOPVALUE Logo" 
+                  className="partner-image"
+                />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
+
     </div>
   );
 };

@@ -1,0 +1,110 @@
+
+
+.rekindle-branding {
+    padding: 4rem 2rem;
+    background-color: #e8d5c4;
+  }
+  
+  .branding-container {
+    max-width: 100%;
+    height: 10px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+  }
+  
+  .rekindle-logo {
+    display: flex;
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1rem;
+  }
+  
+  .branding-tagline {
+    font-size: 1.5rem;
+    color: #8B4513;
+    font-weight: 400;
+    margin: 0;
+  }
+  
+  /* Footer Section */
+  .footer-section {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+  
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .contact-column {
+    align-items: flex-start;
+  }
+  
+  .footer-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #8B4513;
+    margin: 0;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .contact-icon {
+    font-size: 1.2rem;
+  }
+  
+  .contact-text {
+    font-size: 1rem;
+    color: #8B4513;
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+    color: #8B4513;
+  }
+  
+  .policies-column {
+    align-items: flex-start;
+  }
+  
+  .policy-item {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #8B4513;
+    margin: 0;
+  }
+  
+  .coasters-column {
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .footer-coasters {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+  }

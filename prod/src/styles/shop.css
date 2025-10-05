@@ -35,7 +35,7 @@
   left: 0;
   width: 100%;
   height: 50%;
-  background-color: #f6eddf; /* beige */
+  background-color: #e8d5c4; /* beige */
   z-index: 1;
 }
 
@@ -299,5 +299,278 @@
   .shop-now-button {
     padding: 1rem 2rem;
     font-size: 1.1rem;
+  }
+}
+
+/* Our Coasters Are Section */
+.coasters-features {
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+.coasters-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.coasters-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #823200;
+  font-style: italic;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.feature-block {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #8B4513;
+  border-radius: 50%;
+  margin: 0 auto 1rem;
+  /* Icon placeholder - will be replaced with actual icons later */
+}
+
+.feature-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #8B4513;
+  margin-bottom: 0.5rem;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #8B4513;
+  line-height: 1.4;
+}
+
+/* Functional and Storytelling Section */
+.functional-storytelling {
+  padding: 4rem 2rem;
+  background-color: #e8d5c4;
+}
+
+.functional-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.functional-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #823200;
+  font-style: italic;
+  margin-bottom: 3rem;
+  text-align: left;
+  transform: rotate(-2deg);
+}
+
+.functional-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.coaster-stack-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.coaster-stack-image {
+  width: 300px;
+  height: auto;
+  object-fit: contain;
+}
+
+.cocktails-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.cocktails-image {
+  width: 400px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Our Partnerships Section */
+.partnerships {
+  padding: 4rem 2rem;
+  background-color: white;
+}
+
+.partnerships-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.partnerships-title {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #823200;
+  font-style: italic;
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+.partners-logos {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 3rem;
+}
+
+.partner-logo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-image {
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Responsive Design for New Sections */
+@media (max-width: 1024px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .functional-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .partners-logos {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+  
+  .contact-column,
+  .policies-column {
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .coasters-title,
+  .functional-title,
+  .partnerships-title {
+    font-size: 2.5rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .coaster-stack-image {
+    width: 250px;
+  }
+  
+  .cocktails-image {
+    width: 300px;
+  }
+  
+  .partner-image {
+    max-width: 150px;
+  }
+  
+  .ubc-bookstore-logo {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .ubc-top {
+    font-size: 1.5rem;
+  }
+  
+  .ubc-bottom {
+    font-size: 1rem;
+  }
+  
+  .rekindle-logo {
+    width: 250px;
+  }
+  
+  .branding-tagline {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .coasters-features,
+  .functional-storytelling,
+  .partnerships,
+  .rekindle-branding,
+  .footer-section {
+    padding: 3rem 1rem;
+  }
+  
+  .coasters-title,
+  .functional-title,
+  .partnerships-title {
+    font-size: 2rem;
+  }
+  
+  .coaster-stack-image {
+    width: 200px;
+  }
+  
+  .cocktails-image {
+    width: 250px;
+  }
+  
+  .partner-image {
+    max-width: 120px;
+  }
+  
+  .ubc-bookstore-logo {
+    width: 120px;
+    height: 120px;
+  }
+  
+  .ubc-top {
+    font-size: 1.2rem;
+  }
+  
+  .ubc-bottom {
+    font-size: 0.9rem;
+  }
+  
+  .rekindle-logo {
+    width: 200px;
+  }
+  
+  .branding-tagline {
+    font-size: 1.1rem;
+  }
+  
+  .footer-coasters {
+    width: 150px;
   }
 }
