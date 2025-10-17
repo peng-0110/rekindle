@@ -1,0 +1,152 @@
+/* Impact page styles — tuned to visually match impact1.jpg */
+
+.impact-page {
+  background-color: #ffffff;
+  color: #3b1a12; /* deep cocoa for headings */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* HERO */
+.impact-hero {
+  position: relative;
+  padding-top: 32px;
+}
+
+.hero-canvas {
+  position: relative;
+  height: 360px;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.hero-coaster {
+  position: absolute;
+  width: 300px;
+  height: auto;
+}
+.hero-coaster-a { left: 40px; bottom: 24px; transform: rotate(0deg); }
+.hero-coaster-b { left: 360px; bottom: 62px; transform: rotate(0.5deg); }
+.hero-coaster-c { left: 680px; bottom: -8px; transform: rotate(-2deg); }
+
+.hero-drink {
+  position: absolute;
+  width: 260px;
+  left: 130px;
+  bottom: 28px;
+}
+
+.impact-title-wrap {
+  position: relative;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.impact-title-band {
+  height: 120px;
+  background: #ead3bf; /* beige band */
+  width: 60%;
+  position: absolute;
+  right: 0;
+  top: -30px;
+}
+
+.impact-title {
+  position: relative;
+  margin: 0;
+  font-size: 120px;
+  line-height: 1;
+  font-weight: 700;
+  color: #5a190f; /* dark brown */
+  text-transform: lowercase;
+  padding: 40px 0 10px;
+}
+
+/* PROBLEM SECTION */
+.problem-section {
+  padding: 30px 0 10px;
+}
+
+.section-kicker {
+  font-size: 42px;
+  font-weight: 800;
+  font-style: italic;
+  color: #5a190f;
+  margin: 0 0 10px;
+  text-transform: lowercase;
+}
+
+.lead {
+  font-size: 20px;
+  color: #3b1a12;
+  max-width: 960px;
+  margin: 0 0 28px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+.stat-number {
+  color: #8b2e1b;
+  font-size: 32px;
+  font-weight: 800;
+}
+.stat-text {
+  color: #7a5249;
+  font-weight: 600;
+}
+
+/* WHY SECTION */
+.why-section { padding: 32px 0; }
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  align-items: start;
+}
+.why-item { text-align: left; }
+.why-icon { width: 60px; height: auto; margin-bottom: 10px; }
+.why-icon.small { width: 56px; }
+.why-title {
+  color: #a7583c;
+  font-weight: 800;
+  text-transform: lowercase;
+  margin-bottom: 6px;
+}
+.why-text { color: #7a5249; font-weight: 600; }
+
+/* BOTTOM IMAGES */
+.bottom-images { padding: 24px 0 48px; }
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.img-fill { width: 100%; height: auto; display: block; }
+.bottom-left img { border-radius: 2px; }
+.bottom-right img { border-radius: 2px; }
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .impact-title { font-size: 84px; }
+  .hero-canvas { height: 300px; }
+  .impact-title-band { height: 90px; }
+}
+
+@media (max-width: 768px) {
+  .stats-grid, .why-grid, .bottom-grid { grid-template-columns: 1fr; }
+  .impact-title { font-size: 56px; }
+  .impact-title-band { width: 70%; top: -14px; height: 70px; }
+  .hero-canvas { height: 220px; }
+  .hero-coaster { width: 200px; }
+  .hero-drink { width: 180px; }
+}
+
+

@@ -4,7 +4,7 @@ import banner from '../assets/RekindleBanner.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleDown, faSearch, faShoppingCart} from '@fortawesome/free-solid-svg-icons';
 
-const Navbar = () => {
+const Navbar = ({ onNavigate = () => {} }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeItem, setActiveItem] = useState(null);
 
@@ -21,7 +21,11 @@ const Navbar = () => {
             <div className="nav-item dropdown" key={item}>
               <button
                 className={`nav-link ${activeItem === item ? 'active' : ''}`}
-                onClick={() => setActiveItem(item)}
+                onClick={() => {
+                  setActiveItem(item);
+                  if (item === 'Shop') onNavigate('shop');
+                  if (item === 'Impact') onNavigate('impact');
+                }}
               >
                 {item}
                 <FontAwesomeIcon icon={faAngleDown} className="dropdown-icon" />
@@ -62,10 +66,10 @@ const Navbar = () => {
       {isMenuOpen && (
         <div className="mobile-menu">
           <div className="mobile-nav-item">
-            <button className="mobile-nav-link">Shop</button>
+            <button className="mobile-nav-link" onClick={() => { setIsMenuOpen(false); setActiveItem('Shop'); onNavigate('shop'); }}>Shop</button>
           </div>
           <div className="mobile-nav-item">
-            <button className="mobile-nav-link">Impact</button>
+            <button className="mobile-nav-link" onClick={() => { setIsMenuOpen(false); setActiveItem('Impact'); onNavigate('impact'); }}>Impact</button>
           </div>
           <div className="mobile-nav-item">
             <button className="mobile-nav-link">About</button>

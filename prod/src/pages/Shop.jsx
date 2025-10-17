@@ -14,10 +14,9 @@ import chopvalueLogo from '../assets/chopAlue.jpeg';
 import ubcBookStore from "../assets/ubcBookStore.jpeg"
 
 
-const Shop = () => {
+const Shop = ({ onNavigate }) => {
   return (
     <div className="shop-page">
-      <Navbar />
       
       {/* Hero Section */}
       <section className="hero-section">
@@ -162,9 +161,6 @@ const Shop = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
-
     </div>
   );
 };
